@@ -8,7 +8,7 @@ exports.run = (bot, message) => {
         const invite = new RichEmbed()
             .setTitle("Lien d'invitation pour le serveur support")
             .setAuthor(`${user.username}`, user.displayAvatarURL)
-            .addField("Pour rejoindre mon serveur de support, ", "[Clique ici !](https://discord.gg/vJ6GVvq)")
+            .addField("Pour rejoindre mon serveur de support, ", "[Clique ici !](https://discord.gg/CsZZYu)")
             .setColor('RANDOM')
             .setTimestamp()
             message.channel.send(invite)
