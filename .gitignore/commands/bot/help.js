@@ -17,7 +17,7 @@ exports.run = (bot, message) => {
         .addField(":tools: | Modération", "```ban \nclear \nkick \nmute \nsoftban \ntempmute \nunban \nunmute```", true)
 	    .addField(":frame_photo: | Image", "```achievement \napprouved \nbalance \nbeautiful \nbillet \nblur \nbravery \nbrazzers \nbrilliance \ncrush \ndelete \ninvert \nmissionpassed \npixel \npresident \nrip \nshit \ntattoo \nthuglife \ntobecontinued \ntriggered \nwanted \nwasted```", true)
         .addField(":balloon: | Divertissement", "```8ball \nascii \nbigtext \nboutade \ncasino \ncat \ncook \ncowsay \ncowthink \ngif \nmine \npfc \nroll \ntableflip```", true)
-        .addField(":gear: | Utilitaire", "```date \nftnstats \ngiveaway \ngoogle \nitunes \nmcserver \nmcskull \nmcuser \nweather \nyoutube```", true)
+        .addField(":gear: | Utilitaire", "```date \nftnstats \ngiveaway \ngoogle \nitunes \nlatex \nmcserver \nmcskull \nmcuser \nweather \nyoutube```", true)
         .addField(":musical_note: | Musique (VIP)", "```meme \nradio \nskip \nstop```", true)
 	    .addField(":lock: | Administration", "```createrole \nembedsay \npoll \nsay```", true)
         .addField(":necktie: | Administration bot", "```eval \nlogout \nsetstatus```", true)
