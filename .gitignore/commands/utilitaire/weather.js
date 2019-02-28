@@ -8,15 +8,16 @@ exports.run = async (bot, message, args) => {
 
         weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
             if (err) console.log(err);
+		
+		if (result === undefined) {
+              message.channel.send("Je n'ai pas trouvé cette ville")
+		    return;
+            }
 
 
             if (result.length === 0) {
                 message.channel.send('Veuillez rentrer une localisation !')
                 return;
-            }
-
-            if (result === undefined) {
-              message.channel.send("Je n'ai pas trouvé cette ville")
             }
 
             let current = result[0].current;
