@@ -10,13 +10,13 @@ exports.run = async (bot, message, args) => {
             if (err) console.log(err);
 		
 		if (result === undefined) {
-              message.channel.send("Je n'ai pas trouvé cette ville")
+              message.channel.send("Veuillez rentrer une localisation !")
 		    return;
             }
 
 
             if (result.length === 0) {
-                message.channel.send('Veuillez rentrer une localisation !')
+                message.channel.send("Je n'ai pas trouvé cette ville")
                 return;
             }
 
