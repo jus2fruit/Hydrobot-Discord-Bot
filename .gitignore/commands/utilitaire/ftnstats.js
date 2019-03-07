@@ -43,7 +43,6 @@ exports.run = (bot, message, args) => {
         let ekills = squadstats.kills;
         let ekd = squadstats.kd;
 
-        let score = lifetime[6]['score'];
         let matchesPlayed = lifetime[7]['Matches Played'];
         let wins = lifetime[8]['Wins'];
         let winper = lifetime[9]['Win%'];
@@ -60,7 +59,7 @@ exports.run = (bot, message, args) => {
         .addField("**Solo**",`Top 1 : ${swins} \nKills : ${skills} \nScore : ${sscore} \nParties jouées : ${smatchesPlayed} \nK/D : ${skd}`, true)
         .addField("**Duo**", `Top 1 : ${dwins} \nKills : ${dkills} \nScore : ${dscore} \nParties jouées : ${dmatchesPlayed} \nK/D : ${dkd}`, true)
         .addField("**Squad**", `Top 1 : ${ewins} \nKills : ${ekills} \nScore : ${escore} \nParties jouées : ${ematchesPlayed} \nK/D : ${ekd}`, true)
-        .addField("**Global**", `Top 1 : ${wins} \nKills : ${kills} \nScore : ${score} \nParties jouées : ${matchesPlayed} \nK/D : ${kd} \nPourcentage de victoire : ${winper}`, true);
+        .addField("**Global**", `Top 1 : ${wins} \nKills : ${kills} \nParties jouées : ${matchesPlayed} \nK/D : ${kd} \nPourcentage de victoire : ${winper}`, true);
         message.channel.send(embed);
 
     }).catch().catch((error) => console.log(error));
