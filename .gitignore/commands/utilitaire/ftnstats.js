@@ -43,7 +43,7 @@ exports.run = (bot, message, args) => {
         let ekills = squadstats.kills;
         let ekd = squadstats.kd;
 
-        let score = lifetime[6]['Score'];
+        let score = lifetime[6]['score'];
         let matchesPlayed = lifetime[7]['Matches Played'];
         let wins = lifetime[8]['Wins'];
         let winper = lifetime[9]['Win%'];
