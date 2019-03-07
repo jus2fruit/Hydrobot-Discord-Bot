@@ -63,7 +63,7 @@ exports.run = (bot, message, args) => {
         .addField("**Global**", `Top 1 : ${wins} \nKills : ${kills} \nScore : ${score} \nParties jouées : ${matchesPlayed} \nK/D : ${kd} \nPourcentage de victoire : ${winper}`, true);
         message.channel.send(embed);
 
-    }).catch().catch(() => message.channel.send("Ce pseudo n'existe pas !"));
+    }).catch().catch((error) => console.log(error));
 }
 
 exports.help = {
