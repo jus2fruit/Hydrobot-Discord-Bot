@@ -11,7 +11,7 @@ module.exports = (bot, guild) => {
         .addField("Nom :", guild.name)
         .addField("ID", guild.id)
         .addField(`Nombre de membres :`, `${guild.memberCount}`)
-        .addField(`Owner :`, `${guild.owner.tag}`)
+        .addField(`Owner :`, `${guild.owner.user.tag}`)
         .setTimestamp(new Date())
 
         bot.guilds.get(serveur).channels.get(salon).send(embed).catch(() => {
